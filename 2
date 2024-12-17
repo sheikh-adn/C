@@ -1,0 +1,31 @@
+Q2
+
+#include <stdio.h>
+#include <string.h>
+
+int count_occurrences(const char *text, char ch) {
+    int count = 0;
+    for (int i = 0; text[i] != '\0'; i++) {
+        if (text[i] == ch) {
+            count++;
+        }
+    }
+    return count;
+}
+
+void main() {
+    char text[100];
+    char ch;
+
+    printf("Enter a line of text: ");
+    fgets(text, 100, stdin);
+
+    printf("Enter a character to count: ");
+    scanf(" %c", &ch);
+
+    int count = count_occurrences(text, ch);
+
+    printf("The character '%c' occurs %d times in the text.\n", ch, count);
+
+    
+}
