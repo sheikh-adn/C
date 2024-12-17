@@ -1,0 +1,48 @@
+Q1
+
+
+#include <stdio.h>
+void main()
+{
+int arr[10];
+int max=5,counter=0,first=0,second=0,third=0,fourth=0,fifth=0;
+for (int i=0;i<10;i++)
+{
+printf("Enter number of candidate u want to vote:");
+scanf("%d",&arr[i]);
+}
+for(int j=0;j<10;j++)
+{
+if(arr[j]>max)
+{
+counter++;
+}
+else if(arr[j]==1)
+{
+first++;
+}
+else if(arr[j]==2)
+{
+second++;
+}
+else if(arr[j]==3)
+{
+third++;
+}
+else if(arr[j]==4)
+{
+fourth++;
+}
+else if(arr[j]==5)
+{
+fifth++;
+}
+}
+printf("Results of Votes are following:");
+printf("\nSpolit ballots:%d",counter);
+printf("\nFirst candidate:%d",first);
+printf("\nSecond candidate:%d",second);
+printf("\nThird candidate:%d",third);
+printf("\nFourth candidate:%d",fourth);
+printf("\nFifth candidate:%d",fifth);
+}
