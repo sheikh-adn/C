@@ -1,0 +1,32 @@
+Q7
+
+
+#include <stdio.h>
+
+void main() {
+    FILE *mains, *copied;
+    char ch;
+
+    mains = fopen("main.txt", "r");
+    if (mains == NULL) {
+        printf("Error opening main file.\n");
+    }
+
+    copied = fopen("copief.txt", "w");
+    if (copied == NULL) {
+        printf("Error opening copied file.\n");
+        fclose(main);
+        
+    }
+
+    while ((ch = fgetc(mains)) != EOF) {
+        fputc(ch, copied);
+    }
+
+    fclose(mains);
+    fclose(copied);
+
+    printf("File copied successfully.\n");
+
+    
+}
