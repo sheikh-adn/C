@@ -1,0 +1,18 @@
+Q4
+
+
+#include <stdio.h>
+struct time_struct {
+    int h;
+    int min;
+    int sec;
+} time;
+void main() {
+    printf("Enter hour:");
+    scanf("%d",&time.h);
+    printf("\nEnter minute:");
+    scanf("%d",&time.min);
+    printf("\nEnter second:");
+    scanf("%d",&time.sec);
+    printf("\n%d:%d:%d",time.h,time.min,time.sec);
+}
