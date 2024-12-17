@@ -1,0 +1,171 @@
+Q5
+
+
+#include <stdio.h>
+struct Date {
+    int Day;
+    int Month;
+    int Year;
+} D;
+void rea();
+void valid(int a,b,c);
+void print(int x,y,z);
+void main()
+{
+    rea();
+}
+void rea()
+{
+    printf("This is an program to print and validate \ndates\n");
+    printf("Enter Day:");
+    scanf("%d",&D.Day);
+    printf("Enter Month:");
+    scanf("%d",&D.Month);
+    printf("Enter Year:");
+    scanf("%d",&D.Year);
+    valid(D.Day,D.Month,D.Year);
+}
+void valid(int a,b,c)
+{
+    if(a>31) {
+        printf("Invalid date");
+    }
+    else if (a>30 && (b==4 || b==6 || b==9 || b ==11)) {
+        printf("Invalid date");
+    }
+    else if(a==29 && c%4==0) {
+        printf("It's a leap year\n");
+        print(a,b,c);
+    }
+    else if(a>28 && b==2) {
+        printf("Invalid date");
+    }
+    else
+        print(a,b,c);
+}
+void print(int x,y,z)
+{
+    switch (y) {
+    case 1:
+        printf("%d January %d ",x,z);
+        break;
+    case 2:
+        printf("%d February %d ",x,z);
+        break;
+    case 3:
+        printf("%d March %d ",x,z);
+        break;
+    case 4:
+        printf("%d April %d ",x,z);
+        break;
+    case 5:
+        printf("%d May %d ",x,z);
+        break;
+    case 6:
+        printf("%d June %d ",x,z);
+        break;
+    case 7:
+        printf("%d July %d ",x,z);
+        break;
+    case 8:
+        printf("%d August %d ",x,z);
+        break;
+    case 9:
+        printf("%d September %d ",x,z);
+        break;
+    case 10:
+        printf("%d October %d ",x,z);
+        break;
+    case 11:
+        printf("%d November %d ",x,z);
+        break;
+    case 12:
+        printf("%d December %d ",x,z);
+        break;
+    }
+}Q5
+
+
+#include <stdio.h>
+struct Date {
+    int Day;
+    int Month;
+    int Year;
+} D;
+void rea();
+void valid(int a,b,c);
+void print(int x,y,z);
+void main()
+{
+    rea();
+}
+void rea()
+{
+    printf("This is an program to print and validate \ndates\n");
+    printf("Enter Day:");
+    scanf("%d",&D.Day);
+    printf("Enter Month:");
+    scanf("%d",&D.Month);
+    printf("Enter Year:");
+    scanf("%d",&D.Year);
+    valid(D.Day,D.Month,D.Year);
+}
+void valid(int a,b,c)
+{
+    if(a>31) {
+        printf("Invalid date");
+    }
+    else if (a>30 && (b==4 || b==6 || b==9 || b ==11)) {
+        printf("Invalid date");
+    }
+    else if(a==29 && c%4==0) {
+        printf("It's a leap year\n");
+        print(a,b,c);
+    }
+    else if(a>28 && b==2) {
+        printf("Invalid date");
+    }
+    else
+        print(a,b,c);
+}
+void print(int x,y,z)
+{
+    switch (y) {
+    case 1:
+        printf("%d January %d ",x,z);
+        break;
+    case 2:
+        printf("%d February %d ",x,z);
+        break;
+    case 3:
+        printf("%d March %d ",x,z);
+        break;
+    case 4:
+        printf("%d April %d ",x,z);
+        break;
+    case 5:
+        printf("%d May %d ",x,z);
+        break;
+    case 6:
+        printf("%d June %d ",x,z);
+        break;
+    case 7:
+        printf("%d July %d ",x,z);
+        break;
+    case 8:
+        printf("%d August %d ",x,z);
+        break;
+    case 9:
+        printf("%d September %d ",x,z);
+        break;
+    case 10:
+        printf("%d October %d ",x,z);
+        break;
+    case 11:
+        printf("%d November %d ",x,z);
+        break;
+    case 12:
+        printf("%d December %d ",x,z);
+        break;
+    }
+}
